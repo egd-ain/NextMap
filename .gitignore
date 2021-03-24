@@ -1,0 +1,6 @@
+/node_modules
+/.idea
+/.htaccess
+/assets/css/app.css
+/assets/css/app.min.css
+/assets/js/app-min.js

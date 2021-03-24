@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+  <title>お問い合わせ</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="format-detection" content="date=no" />
+  <meta name="format-detection" content="address=no" />
+  <meta name="format-detection" content="email=no" />
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <script src="./assets/js/jquery-3.5.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/slick.min.js" type="text/javascript"></script>
+  <script src="./assets/js/app-min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="./assets/css/app.min.css" />
+</head>
+
+<body class="contact">
+  <div class="wrapper">
+    <header class="header is-scroll" id="js-header-scroll">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg">
+              <a class="logo navbar-brand" href="./index.html" title="NEXTMAP">
+                <span class="slogan">創る人に、創る機会を提供する。</span>
+                <h1>NEXTMAP</h1>
+              </a>
+              <button id="navbar-mobile" class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="burger">
+                  <span></span>
+                  <span></span>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-bg">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html"><span>HOME</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html"><span>ABOUT</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="company.html"><span>COMPANY</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="news.html"><span>INFORMATION</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html"><span>CONTACT</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="row-heading contact">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>CONTACT<span>お問い合わせ</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row-breadcrumb">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Contact
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p class="text-center intro-text">
+              ご入力の上【確認画面へ】ボタンをクリックしてください。（※は入力必須項目です。）
+            </p>
+            <form action="#" class="form-horizontal">
+              <table class="table">
+                <tr>
+                  <th>お名前 <span>※</span></th>
+                  <td><input type="text" name="name" required /></td>
+                </tr>
+                <tr>
+                  <th>フリガナ<span>※</span></th>
+                  <td><input type="text" name="furigana" required /></td>
+                </tr>
+                <tr>
+                  <th>メールアドレス <span>※</span></th>
+                  <td><input type="text" name="mail" required /></td>
+                </tr>
+                <tr>
+                  <th>会社名</th>
+                  <td><input type="text" name="company" required /></td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td><input type="text" name="phone" required /></td>
+                </tr>
+                <tr>
+                  <th>ご住所</th>
+                  <td>
+                    <div class="form-row">
+                      <label class="col-sm-2 col-form-label" for="name">郵便番号</label>
+                      <input type="text" name="address" class="small-input" required />
+                    </div>
+                    <div class="form-row">
+                      <label class="col-sm-2 col-form-label" for="name">部道府県</label>
+                      <input type="text" class="sm-dropdown-input" />
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-dropdown dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <label class="col-sm-2 col-form-label" for="name">市区町村番地</label>
+                      <input type="text" class="full-width" name="address" required />
+                    </div>
+                    <div class="form-row">
+                      <label class="col-sm-2 col-form-label" for="name">建物名/号屋</label>
+                      <input type="text" class="full-width" name="address" required />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ内容<span>※</span></th>
+                  <td>
+                    <textarea name="content" rows="10" required></textarea>
+                  </td>
+                </tr>
+              </table>
+              <div class="text-center">
+                <button class="submit-form">確認画面へ</button>
+              </div>
+            </form>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row-recruit">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto contact-btn text-center">
+            <img src="./assets/images/icon/phone.svg" alt="" />
+            <span class="badge blue">telephone</span>
+          </div>
+          <div class="col-lg-12 contact-detail">
+            <div class="contact-info text-center">
+              <p>
+                お問い合わせ・取材依頼などは以下のフォームもしくはお電話からお願いします。
+              </p>
+              <p>
+                <span class="tel_number">093-391-9111</span><span class="tel_time">営業時間 9:00〜17:00　定休日 日曜・祝日</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <img src="./assets/images/nextmap_recruit_01.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row-brandbar">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <ul class="brand-list">
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/2nd.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/tekko.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/rosy.jpg" alt="" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="row-character">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="heading">
+              <h2>CHARACTER GOODS</h2>
+            </div>
+            <ul class="character-list">
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/ji-mo_b.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/teitan_b.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/wakappa_b.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/gunmachan_banner.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <a href="#" title=""><img src="./assets/images/momomaru_b.jpg" alt="" /></a>
+                </div>
+              </li>
+              <li>
+                <div class="leaf_box">
+                  <img src="./assets/images/character.jpg" alt="" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-nav">
+              <a href="#" title="" class="footerlogo">NEXTMAP</a>
+              <ul class="footer-menu">
+                <li><a title="トップページ" href="index.html"><span>HOME</span></a></li>
+                <li><a title="ネクストマップとは" href="about.html"><span>ABOUT</span></a></li>
+                <li><a title="会社概要" href="company.html"><span>COMPANY</span></a></li>
+                <li><a title="お知らせ（一覧）" href="news.html"><span>INFORMATION</span></a></li>
+                <li><a title="お問い合わせ" href="contact.html"><span>お問い合わせ</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              株式会社ネクストマップ<br />
+              〒800-0064 福岡県北九州市門司区松原1丁目11-7<br />
+              TEL. 093-391-9111　FAX.093-391-9222
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="copyright text-center">
+              <address>&copy; 2021 NEXTMAP.JP All Rights Reserved</address>
+            </div>
+          </div>
+        </div>
+        <a href="javascript::void();" id="gototop">Go to Top</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
