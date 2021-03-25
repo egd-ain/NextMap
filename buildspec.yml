@@ -11,4 +11,3 @@ phases:
 artifacts:
   files:
     - appspec.yaml
-    - git-deploy.sh
