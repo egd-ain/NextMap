@@ -11,3 +11,5 @@ phases:
 artifacts:
   files:
     - appspec.yaml
+    - git-deploy.sh
+  discard-paths: yes
