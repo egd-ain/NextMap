@@ -3,8 +3,6 @@ version: 0.1
 phases:
   pre_build:
     commands:
-      - apt-get update -qq
-      - apt-get install -qq git
       # Setup SSH deploy keys
       - mkdir -p ~/.ssh     
       - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
