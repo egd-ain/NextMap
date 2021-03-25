@@ -1,13 +1,13 @@
 version: 0.1
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 10
   pre_build:
     commands:
       # Setup SSH deploy keys
-      - mkdir -p ~/.ssh     
-      - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
-      - chmod 600 ~/.ssh/id_rsa     
-      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+      - npm install
   build:
     commands:
       - ls
