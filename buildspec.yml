@@ -8,3 +8,7 @@ phases:
       - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
       - chmod 600 ~/.ssh/id_rsa     
       - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config' 
+artifacts:
+  files:
+    - appspec.yml
+    - git-deploy.sh
