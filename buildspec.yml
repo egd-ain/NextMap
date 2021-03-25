@@ -10,5 +10,5 @@ phases:
       - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config' 
 artifacts:
   files:
-    - appspec.yml
+    - appspec.yaml
     - git-deploy.sh
