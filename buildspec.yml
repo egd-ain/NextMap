@@ -1,28 +1,16 @@
-stages:
-  - deploy
+version: 0.1
 
-before_script:
-  - apt-get update -qq
-  - apt-get install -qq git
-  # Setup SSH deploy keys
-  - mkdir -p ~/.ssh     
-  - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
-  - chmod 600 ~/.ssh/id_rsa     
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config' 
+phases:
+  before_script:
+    commands:
+      - apt-get update -qq
+      - apt-get install -qq git
+      # Setup SSH deploy keys
+      - mkdir -p ~/.ssh     
+      - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
+      - chmod 600 ~/.ssh/id_rsa     
+      - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config' 
 
-deploy-dev:
-  stage: deploy
-  script:
-    - bash .gitlab-deploy.sh
-  tags:
-    - dev
-  environment:
-    name: dev
-    url: http://nextmap.egd.vn
-  only:
-    - develop
-  cache:
-    untracked: true
-    key: "$CI_BUILD_REF_NAME"
-    paths:
-      - node_modules
+  deploy-dev:
+    commands:
+      - bash .gitlab-deploy.sh
