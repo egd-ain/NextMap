@@ -12,4 +12,4 @@ phases:
   build:
     commands:
       - ls
-      - ./gitlab-deploy.sh
+      - ./git-deploy.sh
