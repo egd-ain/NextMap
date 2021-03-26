@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: /codebuild/output/src881129030/src/contact.html
+  - source: ./
     destination: /
