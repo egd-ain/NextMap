@@ -1,13 +1,5 @@
 version: 0.0
-Resources:
-  - myLambdaFunction:
-      Type: AWS::Lambda::Function
-      Properties:
-        Name: "myLambdaFunction"
-        Alias: "myLambdaFunctionAlias"
-        CurrentVersion: "1"
-        TargetVersion: "2"
-Hooks:
-  - BeforeAllowTraffic:
-      - location: ./git-deploy.sh
-        timeout: 300
+os: linux
+files:
+  - source: ./
+    destination: /
