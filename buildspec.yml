@@ -15,6 +15,5 @@ phases:
 
 artifacts:
   files:
-    - node_modules/*
+    - index.html
     - appspec.yml
-    - git-deploy.sh
