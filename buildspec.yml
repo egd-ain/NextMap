@@ -6,14 +6,16 @@ phases:
       nodejs: 14
   pre_build:
     commands:
-      # Setup SSH deploy keys
+      - echo Installing source NPM dependencies...
       - npm install
   build:
     commands:
       - pwd
       - ls
+  post_build:
+    commands:
+      - echo Build completed on `date`
 
 artifacts:
   files:
-    - index.html
-    - appspec.yml
+    - '**/*'
